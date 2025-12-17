@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* FULLSCREEN HERO IMAGE */
+.hero-fullscreen {
+  background-image: url('https://img.freepik.com/premium-photo/healthy-vegetarian-diet-food-salad-with-grill-eggplants-tomatoes-feta-cheese_1048944-22798871.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+.hero-fullscreen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-btn {
+  background-color: #00bfa5;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #009688;
+  transform: scale(1.05);
+}
+
+/* FEATURES SECTION */
+.features-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #ffffff, #f1f5f9);
+}
+
+.features-section h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  color: #00bfa5;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,13 @@
+import { useContext } from "react";
+import { Navigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
+
+export default function RequireAuth({ children }) {
+  const { token } = useContext(AuthContext);
+
+  if (!token) {
+    alert("Please login to continue");
+    return <Navigate to="/login" replace />;
+  }
+  return children;
+}
