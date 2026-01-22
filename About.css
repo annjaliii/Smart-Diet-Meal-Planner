@@ -1,0 +1,149 @@
+/* FULL PAGE BACKGROUND */
+.about-bg {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe, #93c5fd);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HERO GLASS CARD */
+.hero-card {
+  width: 92%;
+  max-width: 1300px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(18px);
+  padding: 50px;
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* HERO LEFT */
+.hero-left {
+  flex: 1;
+}
+
+.hero-tag {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 800;
+  color: #1e3a8a;
+  line-height: 1.2;
+}
+
+.hero-text {
+  margin-top: 15px;
+  font-size: 17px;
+  color: #334155;
+  line-height: 1.7;
+  max-width: 450px;
+}
+
+/* BUTTONS */
+.hero-btns {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-filled {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-filled:hover {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #2563eb;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* HERO RIGHT IMAGE */
+.hero-right img {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 12px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.hero-right img:hover {
+  transform: scale(1.05);
+}
+
+/* BOTTOM MINI CARDS (JUST LIKE THE REFERENCE) */
+.bottom-items {
+  width: 92%;
+  max-width: 1300px;
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.item-card {
+  width: 200px;
+  background: rgba(255, 255, 255, 0.45);
+  padding: 18px;
+  border-radius: 18px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.item-card:hover {
+  transform: translateY(-6px);
+}
+
+.item-card h3 {
+  font-size: 18px;
+  color: #1e3a8a;
+  margin-bottom: 6px;
+}
+
+.item-card p {
+  color: #475569;
+  font-size: 14px;
+}
