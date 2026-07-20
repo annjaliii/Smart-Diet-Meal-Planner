@@ -6,15 +6,26 @@ export default function About() {
     "https://static.vecteezy.com/system/resources/thumbnails/019/050/491/small/a-girl-sitting-and-writing-a-diet-plan-weight-loss-concept-eat-food-that-is-good-for-the-body-such-as-fruits-and-vegetables-free-photo.jpg";
 
   const items = [
-    { title: "Healthy Planning", desc: "Organize your meals daily." },
-    { title: "Balanced Diets", desc: "Science-backed nutrition." },
-    { title: "Expert Support", desc: "Guidance from specialists." },
-    { title: "Smart Tracking", desc: "Track your progress easily." },
+    {
+      title: "Personalized Meal Plans",
+      desc: "AI-powered recommendations tailored to your health goals.",
+    },
+    {
+      title: "Balanced Nutrition",
+      desc: "Scientifically designed meal suggestions for a healthy lifestyle.",
+    },
+    {
+      title: "Easy Access",
+      desc: "Download your customized meal plans in PDF format anytime.",
+    },
+    {
+      title: "Smart Planning",
+      desc: "Plan your daily meals effortlessly with AI assistance.",
+    },
   ];
 
   return (
     <div className="about-bg">
-
       {/* HERO CARD */}
       <div className="hero-card">
         <div className="hero-left">
@@ -55,6 +66,3 @@ export default function About() {
     </div>
   );
 }
-
-
-

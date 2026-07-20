@@ -28,12 +28,32 @@ const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
-          <li className="nav-item"><Link to="/" className="nav-link text-white">Home</Link></li>
-          <li className="nav-item"><Link to="/create-plan" className="nav-link text-white">Create Plan</Link></li>
-          <li className="nav-item"><Link to="/meal-plan" className="nav-link text-white">Meal Plan</Link></li>
-          <li className="nav-item"><Link to="/nutrition-info" className="nav-link text-white">Nutrition Info</Link></li>
-          <li className="nav-item"><Link to="/faqs" className="nav-link text-white">FAQs</Link></li>
-          <li className="nav-item"><Link to="/about" className="nav-link text-white">About</Link></li>
+          <li className="nav-item">
+            <Link to="/" className="nav-link text-white">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/create-plan" className="nav-link text-white">
+              Create Plan
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/meal-plan" className="nav-link text-white">
+              Meal Plan
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/nutrition-info" className="nav-link text-white">
+              Nutrition Info
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/about" className="nav-link text-white">
+              About
+            </Link>
+          </li>
 
           {token ? (
             <li className="nav-item">
@@ -43,8 +63,16 @@ const Navbar = () => {
             </li>
           ) : (
             <>
-              <li className="nav-item"><Link className="btn btn-success mx-2" to="/login">Login</Link></li>
-              <li className="nav-item"><Link className="btn btn-light mx-2" to="/register">Register</Link></li>
+              <li className="nav-item">
+                <Link className="btn btn-success mx-2" to="/login">
+                  Login
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="btn btn-light mx-2" to="/register">
+                  Register
+                </Link>
+              </li>
             </>
           )}
         </ul>

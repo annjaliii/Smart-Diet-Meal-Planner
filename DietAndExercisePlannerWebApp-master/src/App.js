@@ -7,31 +7,31 @@ import Home from "./pages/Home";
 import CreatePlan from "./pages/createPlan";
 import MealPlan from "./pages/MealPlan";
 import NutritionInfo from "./pages/NutritionInfo";
-import FAQs from "./pages/FAQs";
+
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
-import AuthProvider from "./context/AuthContext";   // 👈 IMPORT PROVIDER
+import AuthProvider from "./context/AuthContext"; // 👈 IMPORT PROVIDER
 import "./App.css";
 
 function App() {
   return (
-    <AuthProvider>   {/* 👈 MUST WRAP EVERYTHING */}
+    <AuthProvider>
+      {" "}
+      {/* 👈 MUST WRAP EVERYTHING */}
       <Router>
-        <Navbar />     {/* 👈 NOW IT HAS CONTEXT */}
-
+        <Navbar /> {/* 👈 NOW IT HAS CONTEXT */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-plan" element={<CreatePlan />} />
           <Route path="/meal-plan" element={<MealPlan />} />
           <Route path="/nutrition-info" element={<NutritionInfo />} />
-          <Route path="/faqs" element={<FAQs />} />
+
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
         </Routes>
-
         <Footer />
       </Router>
     </AuthProvider>

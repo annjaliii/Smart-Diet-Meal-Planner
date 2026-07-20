@@ -1,5 +1,5 @@
-import React from 'react';
-import './Home.css';
+import React from "react";
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -7,10 +7,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="hero-fullscreen">
         <div className="hero-content">
-          <h1>Smart Disease & Diet Planner </h1>
+          <h1>Smart Diet Meal Planner </h1>
           <p>
-            Get AI-powered meal recommendations based on your medical conditions —
-            diabetes, heart disease, obesity, and more. Eat smart, stay healthy!
+            Get AI-powered meal recommendations based on your medical conditions
+            — diabetes, heart disease, obesity, and more. Eat smart, stay
+            healthy!
           </p>
           <button className="hero-btn">Start Planning</button>
         </div>
@@ -26,7 +27,9 @@ const Home = () => {
               alt="Diabetes diet"
             />
             <h3>Diabetes-Friendly Diets</h3>
-            <p>Control your blood sugar with tailored low-glycemic meal plans.</p>
+            <p>
+              Control your blood sugar with tailored low-glycemic meal plans.
+            </p>
           </div>
 
           <div className="feature-card">
@@ -35,7 +38,9 @@ const Home = () => {
               alt="Heart health"
             />
             <h3>Heart-Healthy Choices</h3>
-            <p>Get balanced meals that support cholesterol and heart wellness.</p>
+            <p>
+              Get balanced meals that support cholesterol and heart wellness.
+            </p>
           </div>
 
           <div className="feature-card">
